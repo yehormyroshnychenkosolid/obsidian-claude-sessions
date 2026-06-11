@@ -1,0 +1,19 @@
+# Obsidian local workspace state (machine-specific)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# ── IMPORTANT ───────────────────────────────────────────────────────────────
+# This repo ships only the EMPTY system (templates + commands + guide).
+# Do NOT commit a real, populated vault here — it will contain your private
+# work. Keep your live vault in a separate (private) repo or local-only folder.
+# The lines below guard against committing real content into vault-template/:
+vault-template/projects/*/
+!vault-template/projects/_templates/
+vault-template/session-logs/*
+!vault-template/session-logs/.gitkeep

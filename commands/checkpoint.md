@@ -37,8 +37,8 @@ If any bugs were found/fixed or decisions made, update the relevant files in `va
 Append/update only — do not rewrite whole files.
 
 ## 4. Update active context
-Update `vault/active-context.md`:
-- Set "Current Focus" to what is being worked on right now.
+`active-context.md` is a snapshot of the current/last state, NEVER an append-log. Update in place:
+- **Overwrite** "Current Focus" with what is being worked on right now. Do NOT keep the prior focus as a `## Previous Focus` block — that history lives in the session log. Keep exactly one Current Focus and zero Previous Focus sections.
 - Note this is a checkpoint; the session is still active.
 - Write every vault path as a wikilink, never plain text.
 

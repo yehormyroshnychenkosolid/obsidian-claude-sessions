@@ -47,10 +47,10 @@ Read and update each relevant file in `vault/projects/{project-name}/` (append/u
 Create any missing file from `vault/projects/_templates/` (rename + prefix wikilinks + replace `{Project Name}` per `/start-session` rules).
 
 ## 4. Update active context
-Update `vault/active-context.md`:
+`active-context.md` is a snapshot of the current/last state, NEVER an append-log. Update in place:
 - Add a link to the new session log under "Recent Sessions" (keep last 5).
 - Update "Open Questions" with unresolved items.
-- Update "Current Focus" with the next steps.
+- **Overwrite** "Current Focus" with the next steps. Do NOT demote the old focus into a `## Previous Focus` block — that history already lives in the session log. Keep exactly one Current Focus and zero Previous Focus sections.
 - Write every vault path as a wikilink immediately, never plain text.
 
 ## 5. Cross-link prompt

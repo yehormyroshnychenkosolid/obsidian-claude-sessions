@@ -63,5 +63,5 @@ CLAUDE.md (this file)            ← vault system rules, always loaded
 ### Conventions
 - Each subdirectory in this workspace is a project.
 - Session logs: `{project}-{YYYY-MM-DD}-{HH-MM}.md`.
-- Project files are append-only during updates — don't rewrite, just add/modify the relevant section.
-- `active-context.md` always reflects the current/last session state.
+- Project files (under `projects/`) are append-only during updates — don't rewrite, just add/modify the relevant section. This append-only rule does NOT apply to `active-context.md` (see below).
+- `active-context.md` always reflects the current/last session state — it is **overwritten, not appended**. Keep exactly one `## Current Focus`; never accumulate `## Previous Focus` blocks (that history belongs in `session-logs/`).
